@@ -8,17 +8,17 @@
 </head>
 <body>
 
-<?php
 
-  echo  $_GET['user_name'];
-
-?>
-
-<form  action="../forms/form.php"  method="post">
+<form  action="thanks.php"  method="post">
 
 <div>
   <label  for="nom">Nom :</label>
   <input  type="text"  id="nom"  name="user_name">
+</div>
+
+<div>
+  <label  for="prénom">Prénom :</label>
+  <input type="text"  id="prénom" name="user_firstname">
 </div>
 
 <div>
@@ -27,9 +27,28 @@
 </div>
 
 <div>
+  <label  for="téléphone">Téléphone :</label>
+  <input type="numbers"  id="téléphone" name="user_phonenumber">
+</div>
+
+<div>
+  <label> Select Subject </label>  
+<select name="choice">  
+<option value = "Climate Change"> Climate Change   </option>  
+<option value = "Food Shortage"> Food Shortage   </option>  
+<option value = "Clean Water"> Clean Water </option>  
+<option value = "Migration"> Migration</option>  
+</select>  
+</div>
+
+<br>
+
+<div>
   <label  for="message">Message :</label>
   <textarea  id="message"  name="user_message"></textarea>
 </div>
+
+<br>
 
 <div  class="button">
   <button  type="submit">Envoyer votre message</button>
@@ -38,8 +57,5 @@
 </form>
 </body>
 </html>
-
-Test for git connection
-
 
 
